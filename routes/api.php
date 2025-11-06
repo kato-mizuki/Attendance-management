@@ -1,10 +1,5 @@
 <?php
-
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\AttendanceController;
 
 Route::get('/employees', [AttendanceController::class, 'index']);
 Route::post('/records', [AttendanceController::class, 'store']);
-Route::view('/attendance', 'attendance');
-
-
